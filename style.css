@@ -13,21 +13,43 @@ button {
     background-color: #64A712;
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    padding: 10px 20px; /* Adicionado para botões mais visíveis */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Muda o cursor para indicar clicável */
+    margin: 5px; /* Espaçamento entre botões */
+}
+
+button:hover {
+    background-color: #4CAF50; /* Cor um pouco mais escura ao passar o mouse */
 }
 
 .passo {
     display: none;
+    padding: 20px; /* Adicionado para um melhor espaçamento interno */
+    border: 1px solid #4CAF50; /* Borda para cada "passo" */
+    border-radius: 8px; /* Borda arredondada */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o conteúdo */
 }
 
 .passo.ativo {
-    display:block;
+    display: block;
 }
 
 main {
     text-align: center;
-    max-width: 90%;
+    max-width: 600px; /* Um pouco mais estreito para melhor leitura */
+    width: 90%; /* Garante que se ajuste a telas menores */
 }
 
 img {
-    max-width: 90%;
+    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner do passo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+    border-radius: 8px; /* Borda arredondada para as imagens */
+}
+
+p {
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+    line-height: 1.5; /* Melhor legibilidade do texto */
 }
