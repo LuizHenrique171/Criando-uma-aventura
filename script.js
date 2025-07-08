@@ -5,7 +5,10 @@ avanca.forEach(button => {
         const atual = document.querySelector('.ativo');
         const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
 
+        // Remove a classe 'ativo' do passo atual
         atual.classList.remove('ativo');
+        
+        // Adiciona a classe 'ativo' ao próximo passo, tornando-o visível
         document.getElementById(proximoPasso).classList.add('ativo');
-    })
-})
+    });
+});
